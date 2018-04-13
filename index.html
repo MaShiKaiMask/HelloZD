@@ -5,7 +5,7 @@
 <head>
 	<link rel="shortcut icon" type="image/x-icon" href="http://mmrslgo.com/wp-content/uploads/2015/07/w-logo-blue.png" />
     <title>
-        我很开心，先说句我错了再查看
+        送祝福，先说句“生日快乐”
     </title>
 </head>
 <meta charset="utf-8">
@@ -17,15 +17,15 @@
     function check()
     {
         var sorry = $('#sorry').val();
-        if(sorry == '我错了')
+        if(sorry == '生日快乐')
         {
-            alert('态度不错，准备跳转...');
+            alert('谢谢，准备跳转...');
             window.location.href="./LoveZD.html";
 
         }
         else
         {
-            alert('你是什么态度？打屎你！');
+            alert('重说！！');
         }
     }
 </script>
@@ -129,8 +129,8 @@
 <div style="width: 500px; margin: 0 auto;">
     <img src="./sorrybg.jpg" border="0" />
 
-    <input id="sorry" style="float:left; height:30px; width:350px; line-height:30px; color:#CCC; font-size: 16px;" type="text" class="bdiv gray" value="--说“我错了”--" onfocus="this.className='bdiv';if (this.value=='--说“我错了”--') {this.value=''}" onblur="if(this.value==''){this.className+=' gray';this.value='--说“我错了”--'}">
-    <input id="check" class="bdiv" style="float: right; font-size: 16px; height:30px; width:100px;" type="button" value="注意态度" onclick="check()">
+    <input id="sorry" style="float:left; height:30px; width:350px; line-height:30px; color:#CCC; font-size: 16px;" type="text" class="bdiv gray" value="--说“生日快乐”--" onfocus="this.className='bdiv';if (this.value=='--说“生日快乐”--') {this.value=''}" onblur="if(this.value==''){this.className+=' gray';this.value='--说“生日快乐”--'}">
+    <input id="check" class="bdiv" style="float: right; font-size: 16px; height:30px; width:100px;" type="button" value="重新说" onclick="check()">
 
 </div>
 
