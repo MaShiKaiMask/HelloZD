@@ -1,102 +1,142 @@
-<!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<?php/*Template Name: mylove*/?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
 <head>
-	<title>Our Love Story</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<style type="text/css">
-		@font-face {
-			font-family: digit;
-			src: url('digital-7_mono.ttf') format("truetype");
-		}
-	</style>
-	<link href="css/default.css" type="text/css" rel="stylesheet">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/garden.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="http://mmrslgo.com/wp-content/uploads/2015/07/w-logo-blue.png" />
+    <title>
+        我很开心，先说句我错了再查看
+    </title>
 </head>
+<meta charset="utf-8">
+<script type="text/javascript" src="http://mmrslgo.com/wp-content/themes/sparkling/mylove/js/jquery.min.js" ></script>
+<style>
+    .bdiv{background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(245, 245, 245); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-top-left-radius: 7px; border-top-right-radius: 7px; border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; background-position: initial initial; background-repeat: initial initial; }
+</style>
+<script>
+    function check()
+    {
+        var sorry = $('#sorry').val();
+        if(sorry == '我错了')
+        {
+            alert('态度不错，准备跳转...');
+            window.location.href="./index_1.html";
 
+        }
+        else
+        {
+            alert('你是什么态度？打屎你！');
+        }
+    }
+</script>
+<style>
+    body{ font-family:"Microsoft YaHei",Arial;font-size:12px;}
+    a {
+        outline:none;
+        blr:expression(this.onFocus=this.blur());
+        text-decoration:none;
+    }
+    a.wb_sina {
+        float:left;
+        margin-top:20px;
+        margin-left:15px;
+        display:inline-block;
+        padding:4px 10px;
+        border-radius:3px;
+        background-color:#e55345;
+        background-image:-moz-linear-gradient(top,#e96249,#e03c40);
+        background-image:-ms-linear-gradient(top,#e96249,#e03c40);
+        background-image:-webkit-gradient(linear,0 0,0 100%,from(#e96249),to(#e03c40));
+        background-image:-webkit-linear-gradient(top,#e96249,#e03c40);
+        background-image:-o-linear-gradient(top,#e96249,#e03c40);
+        background-image:linear-gradient(top,#e96249,#e03c40);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e96249',endColorstr='#e03c40',GradientType=0);
+        background-repeat:repeat-x;
+        text-shadow:0 -1px 0 rgba(0,0,0,.5);
+        border:1px solid #cf2b28;
+        color:#fff!important;
+        box-shadow:0 1px 0 rgba(255,255,255,.2) inset,0 1px 0 rgba(0,0,0,.2);
+    }
+    a.wb_sina:hover {
+        background-image:-moz-linear-gradient(top,#e03c40,#e96249);
+        background-image:-ms-linear-gradient(top,#e03c40,#e96249);
+        background-image:-webkit-gradient(linear,0 0,0 100%,from(#e03c40),to(#e96249));
+        background-image:-webkit-linear-gradient(top,#e03c40,#e96249);
+        background-image:-o-linear-gradient(top,#e03c40,#e96249);
+        background-image:linear-gradient(top,#e03c40,#e96249);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e03c40',endColorstr='#e96249',GradientType=0);
+    }
+    a.wb_sina span {
+        display:inline-block;
+        vertical-align:-5px;
+        margin-right:7px;
+        height:20px;
+        width:24px;
+        background:url(http://mmrslgo.com/wp-content/themes/sparkling/mylove/images/weibo.png) no-repeat;
+    }
+    a.wb_tencent {
+        float:left;
+        margin-top:20px;
+        margin-left:15px;
+        display:inline-block;
+        padding:4px 10px;
+        border-radius:3px;
+        background-color:#0e7fcc;
+        background-image:-moz-linear-gradient(top,#1288d4,#0771c1);
+        background-image:-ms-linear-gradient(top,#1288d4,#0771c1);
+        background-image:-webkit-gradient(linear,0 0,0 100%,from(#1288d4),to(#0771c1));
+        background-image:-webkit-linear-gradient(top,#1288d4,#0771c1);
+        background-image:-o-linear-gradient(top,#1288d4,#0771c1);
+        background-image:linear-gradient(top,#1288d4,#0771c1);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1288d4',endColorstr='#0771c1',GradientType=0);
+        background-repeat:repeat-x;
+        text-shadow:0 -1px 0 rgba(0,0,0,.5);
+        border:1px solid #0D6EB8;
+        color:#fff!important;
+        box-shadow:0 1px 0 rgba(255,255,255,.2) inset,0 1px 0 rgba(0,0,0,.2);
+    }
+    a.wb_tencent:hover {
+        background-color:#0e7fcc;
+        background-image:-moz-linear-gradient(top,#0771c1,#1288d4);
+        background-image:-ms-linear-gradient(top,#0771c1,#1288d4);
+        background-image:-webkit-gradient(linear,0 0,0 100%,from(#0771c1),to(#1288d4));
+        background-image:-webkit-linear-gradient(top,#0771c1,#1288d4);
+        background-image:-o-linear-gradient(top,#0771c1,#1288d4);
+        background-image:linear-gradient(top,#0771c1,#1288d4);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0771c1',endColorstr='#1288d4',GradientType=0);
+    }
+    a.wb_tencent span {
+        display:inline-block;
+        vertical-align:-5px;
+        margin-right:7px;
+        height:20px;
+        width:24px;
+        background:url(http://mmrslgo.com/wp-content/themes/sparkling/mylove/images/weibo.png) no-repeat 0 -20px;
+    }
+    #abox
+    {
+        position: fixed;
+        _position: absolute;
+        right: 15px;
+        z-index: 99999999;
+    }
+</style>
 <body>
-	<div id="mainDiv">
-		<div id="content">
-			<div id="code">
-				<span class="comments">亲爱的:</span><br />
-				<span class="space"/><span class="comments">我们</span><br />
-				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
-				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br />
-				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br />
-				i.love(u);<br />
-				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
-				u.accepted();<br />
-				<span class="comments">// Since then, I miss u every day.</span><br />
-				i.miss(u);<br />
-				<span class="comments">// And take care of u and our love.</span><br />
-				i.takeCareOf(u);<br />
-				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
-				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
-				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (isHesitate) {<br />
-				<span class="placeholder"/>i.waitFor(u);<br />
-				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
-				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
-				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
-				}<br />
-				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
-				i.marry(u);<br />
-				i.liveHappilyWith(u);<br />
-			</div>
-			<div id="loveHeart">
-				<canvas id="garden"></canvas>
-				<div id="words">
-					<div id="messages">
-						Minyue, I have fallen in love with you for
-						<div id="elapseClock"></div>
-					</div>
-					<div id="loveu">
-						Love u forever and ever.<br/>
-						<div class="signature">- hackerzhou</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="copyright">
-			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
-			Copyright © 2011 <a href='http://hackerzhou.me'>hackerzhou.me</a> 2009-2011
-		</div>
-	</div>
-	<script type="text/javascript">
-		var offsetX = $("#loveHeart").width() / 2;
-		var offsetY = $("#loveHeart").height() / 2 - 55;
-		var together = new Date();
-		together.setFullYear(2013, 4, 27);
-		together.setHours(20);
-		together.setMinutes(0);
-		together.setSeconds(0);
-		together.setMilliseconds(0);
-		
-		if (!document.createElement('canvas').getContext) {
-			var msg = document.createElement("div");
-			msg.id = "errorMsg";
-			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-			document.body.appendChild(msg);
-			$("#code").css("display", "none")
-			$("#copyright").css("position", "absolute");
-			$("#copyright").css("bottom", "10px");
-		    document.execCommand("stop");
-		} else {
-			setTimeout(function () {
-				startHeartAnimation();
-			}, 5000);
+<div id="abox">
+    <a href="http://weibo.com/2661583373/profile?topnav=1&wvr=6" target="_blank" class="wb_sina"><span></span>新浪微博</a>
+    <a href="http://t.qq.com/wudi56782010?preview" target="_blank" class="wb_tencent"><span></span>腾讯微博</a>
+</div>
+<div style="width: 500px; margin: 0 auto;">
+    <img src="http://mmrslgo.com/wp-content/themes/sparkling/mylove/images/sorrybg.jpg" border="0" />
 
-			timeElapse(together);
-			setInterval(function () {
-				timeElapse(together);
-			}, 500);
+    <input id="sorry" style="float:left; height:30px; width:350px; line-height:30px; color:#CCC; font-size: 16px;" type="text" class="bdiv gray" value="--说“我错了”--" onfocus="this.className='bdiv';if (this.value=='--说“我错了”--') {this.value=''}" onblur="if(this.value==''){this.className+=' gray';this.value='--说“我错了”--'}">
+    <input id="check" class="bdiv" style="float: right; font-size: 16px; height:30px; width:100px;" type="button" value="注意态度" onclick="check()">
 
-			adjustCodePosition();
-			$("#code").typewriter();
-		}
-	</script>
+</div>
+
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
 </body>
 </html>
